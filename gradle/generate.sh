@@ -12,7 +12,7 @@ get_latest_lombok_version() {
 }
 
 get_latest_spring_boot_version() {
-  curl "https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-parent/maven-metadata.xml" 2>/dev/null |
+  curl "https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-parent/maven-metadata.xml" 2>/dev/null |
     sed -nE 's/.*<release>(.*)<\/release>.*/\1/p'
 }
 
